@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ToDoApplication</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+<template id="update-todo">
+    <label for="update-todo-list"> Внесите изменения</label>
+    <input type="text" class="update-todo-list">
+    <button id="submit-change">OK</button>
+    <button id="cancel-change">Отмена</button>
+</template>
+<template id="list">
+    <button class="logOut">Выйти</button>
+    <label for="c-input-field"></label>
+    <input type="text" class="add-input-field" name="c-input-field" >
+    <button class="add-button">Добавить</button>
+  <!--  <button class="reload-button">Обновить</button>-->
+    <input type="text" class="filter" placeholder="search">
+    <span class="message"></span>
+    <button class="filter-button">Поиск</button>
+    <button class="filter-clear-button">Очистить</button>
+    <div class="js-items" id="todo-items">
+
+    </div>
+</template>
+<template id="registration">
+    <label for="login">Login</label>
+    <input type="text" class="login" name="login">
+    <label for="email">Email</label>
+    <input type="email" class="email" name="email">
+    <label for="password">Password</label>
+    <input type="password" class="password" name="password">
+    <label for="repPassword">Repeat Password</label>
+    <input type="email" class="repPassword" name="repPass">
+    <button class="signUp">Зарегистрироваться</button>
+    <button class="signIn">Войти</button>
+</template>
+<template id="login">
+    <label for="login">Login</label>
+    <input type="text" class="login" name="login">
+    <label for="password">Password</label>
+    <input type="password" class="password" name="password">
+    <button class="signIn">Вход</button>
+    <button class="registrationPage">Регистрация</button>
+</template>
+<main class="container">
+    <header>
+        <h1>ToDoApplication</h1>
+    </header>
+    <div class="wrapper_app">
+    <section id="app">
+    </section>
+    </div>
+</main>
+<script type="module" src="./main.js"></script>
+</body>
+</html>
