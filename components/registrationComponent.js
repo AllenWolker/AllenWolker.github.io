@@ -91,6 +91,5 @@ export default class LoginComponent extends Component {
     }
 
     render() {
-        console.log('REDIRECT REGISTRATION', this.settings)
     }
 }
