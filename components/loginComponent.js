@@ -29,6 +29,7 @@ onDestroy() {
         //   console.log("LOGIN USER",users_data);
         const request = new Request('https://136984a6.ngrok.io/api/login', {
             method: 'POST',
+            mode: 'no-cors',
             headers: new Headers({'Content-Type': 'application/json'}),
             body: JSON.stringify(users_data)
         });
