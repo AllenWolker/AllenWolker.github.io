@@ -27,7 +27,7 @@ onDestroy() {
             password: store.state.userInfo.password,
         };
         //   console.log("LOGIN USER",users_data);
-        const request = new Request('https://136984a6.ngrok.io/api/login', {
+        const request = new Request('http://localhost:3000/api/login', {
             method: 'POST',
             mode: 'no-cors',
             headers: new Headers({'Content-Type': 'application/json'}),
