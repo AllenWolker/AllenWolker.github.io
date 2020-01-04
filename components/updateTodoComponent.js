@@ -29,7 +29,7 @@ onDestroy() {
         if (!list_data) {
             alert('Пусто');
         } else {
-            const request = new Request('https://136984a6.ngrok.io/api/update-list', {
+            const request = new Request('http://localhost:3000/api/update-list', {
                 method: 'POST',
                 headers: new Headers({'Content-Type': 'application/json'}),
                 body: JSON.stringify(list_data)
