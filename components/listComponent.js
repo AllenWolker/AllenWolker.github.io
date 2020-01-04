@@ -29,7 +29,7 @@ export default class ListComponent extends Component {
         if (!list_data) {
             alert('Пусто');
         } else {
-            const request = new Request('https://136984a6.ngrok.io/api/new-list', {
+            const request = new Request('http://localhost:3000/api/new-list', {
                 method: 'POST',
                 headers: new Headers({'Content-Type': 'application/json'}),
                 body: JSON.stringify(list_data)
@@ -61,7 +61,7 @@ export default class ListComponent extends Component {
         let id = idx;
         let todoList = store.state.todo[id];
         console.log('deleted todo', todoList, id);
-        let request = new Request('https://136984a6.ngrok.io/api/list/remove/' + id, {
+        let request = new Request('http://localhost:3000/api/list/remove/' + id, {
             method: 'DELETE'
         });
         fetch(request)
