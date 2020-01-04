@@ -64,7 +64,7 @@ export default class LoginComponent extends Component {
         } else if (users_data.password !== users_data.repPassword || users_data.password.length < 8) {
             alert('поля пароля не совпадают либо пароль слишком короткий(пароль должен быть минимум 8 символов)')
         } else {
-            const request = new Request('https://136984a6.ngrok.io/api/new-user', {
+            const request = new Request('http://localhost:3000/api/new-user', {
                 method: 'POST',
                 headers: new Headers({'Content-Type': 'application/json'}),
                 body: JSON.stringify(users_data)
