@@ -33,7 +33,7 @@ export default class Store {
     componentDidMount() {
         this.state.todo = [];
         console.log('Component has mounted');
-        fetch('https://136984a6.ngrok.io/api/list')
+        fetch('http://localhost:3000/api/list')
             .then(status)
             .then(json)
             .then(data => {
